@@ -1,6 +1,6 @@
-# Get real date & time from an API
+# Get real date & time from an API 
 ## Prevent cheating by changing device's time or date.
 
-[Youtube video tutorial >>](https://www.youtube.com/watch?v=uJK1ajLaq6I)
+[Youtube video tutorial☟](https://www.youtube.com/watch?v=uJK1ajLaq6I)
 
-![video thumbnail ](http://img.youtube.com/vi/uJK1ajLaq6I/0.jpg)]
+![video thumbnail ](http://img.youtube.com/vi/uJK1ajLaq6I/0.jpg)
