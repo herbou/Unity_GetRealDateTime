@@ -24,14 +24,14 @@ echo date("Y-m-d\TH:i:s", time());
 ```
 But make sure to remove the `JsonUtility..` code from `WorldTimeApi.cs` in the `Assets` folder:
 ```c#
-	IEnumerator GetRealDateTimeFromAPI ( ) {
-		//...
-		//...
-		} else {
-			//success
-			TimeDate timeData = new TimeData( );
-			timeData.datetime = webRequest.downloadHandler.text;
-			//....
-		}
+IEnumerator GetRealDateTimeFromAPI ( ) {
+	//...
+	//...
+	} else {
+		//success
+		TimeDate timeData = new TimeData( );
+		timeData.datetime = webRequest.downloadHandler.text;
+		//....
 	}
+}
 ```
