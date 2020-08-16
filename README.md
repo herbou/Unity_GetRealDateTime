@@ -3,7 +3,7 @@
 
 [↪Watch Video Tutorial ](https://www.youtube.com/watch?v=uJK1ajLaq6I)
 
-### If you want to use your own API using php:
+### If you want to use your own API using php :
 - add a folder to your server named `TimeApi` 
 - create an `index.php` file inside of TimeApi/ 
 ```php
@@ -18,7 +18,7 @@ echo '{ "datetime": "'.$datetime.'" }';
 Now you can get time from your server:
 `http://yourdomainname.com/TimeApi/`
 
-if you don't want to use json format :
+### If you don't want to use the json format :
 ```php
 <?php
 
