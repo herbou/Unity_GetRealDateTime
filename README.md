@@ -33,7 +33,7 @@ IEnumerator GetRealDateTimeFromAPI ( ) {
 	//...
 	} else {
 		//success
-		TimeDate timeData = new TimeData( );
+		TimeData timeData = new TimeData( );
 		timeData.datetime = webRequest.downloadHandler.text;
 		//....
 	}
