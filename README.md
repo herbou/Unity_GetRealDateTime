@@ -14,6 +14,10 @@ echo '{ "datetime": "'.$datetime.'" }';
 
 ?>
 ```
+
+Now you can get time from your server:
+`http://yourdomainname.com/TimeApi/`
+
 if you don't want to use json format :
 ```php
 <?php
