@@ -26,7 +26,7 @@ echo date("Y-m-d\TH:i:s", time());
 
 ?>
 ```
-But make sure to remove the `JsonUtility..` code from `WorldTimeApi.cs` in the `Assets` folder:
+But make sure to remove the `JsonUtility..` code from `WorldTimeApi.cs` in the `Assets` folder and use this one :
 ```c#
 IEnumerator GetRealDateTimeFromAPI ( ) {
 	//...
