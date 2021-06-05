@@ -49,13 +49,11 @@ public class WorldTimeAPI : MonoBehaviour {
 		UnityWebRequest webRequest = UnityWebRequest.Get ( API_URL );
 		Debug.Log ( "getting real datetime..." );
 
-		yield return webRequest.Send ( );
+		yield return webRequest.SendWebRequest ( );
 
-		if ( webRequest.isError ) {
+		if ( webRequest.result == UnityWebRequest.Result.Success ) {
 			//error
 			Debug.Log ( "Error: " + webRequest.error );
-
-		} else {
 			//success
 			TimeData timeData = JsonUtility.FromJson<TimeData> ( webRequest.downloadHandler.text );
 			//timeData.datetime value is : 2020-08-14T15:54:04+01:00
@@ -64,6 +62,10 @@ public class WorldTimeAPI : MonoBehaviour {
 			IsTimeLodaed = true;
 
 			Debug.Log ( "Success." );
+
+		} else {
+			//error
+			Debug.Log ( "Error: " + webRequest.error );
 		}
 	}
 	//datetime format => 2020-08-14T15:54:04+01:00
