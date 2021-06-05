@@ -49,9 +49,9 @@ public class WorldTimeAPI : MonoBehaviour {
 		UnityWebRequest webRequest = UnityWebRequest.Get ( API_URL );
 		Debug.Log ( "getting real datetime..." );
 
-		yield return webRequest.Send ( );
+		yield return webRequest.SendWebRequest ( );
 
-		if ( webRequest.isError ) {
+		if ( webRequest.isNetworkError || webRequest.isHttpError ) {
 			//error
 			Debug.Log ( "Error: " + webRequest.error );
 
